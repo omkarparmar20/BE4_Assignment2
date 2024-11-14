@@ -1,1 +1,19 @@
-{ "version": 2, "builds": [{ "src": "index.js", "use": "@vercel/node" }], "rewrites": [{ "source": "/(.*)", "destination": "index.js" }] }
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "index.js"
+      }
+    ],
+    "env": {
+      "MONGODB": "mongodb://neoGStudent:GhAFjVKnaBvvNoOY@neog-shard-00-00.nsnfb.mongodb.net:27017,neog-shard-00-01.nsnfb.mongodb.net:27017,neog-shard-00-02.nsnfb.mongodb.net:27017/?ssl=true&replicaSet=atlas-hd1dpk-shard-0&authSource=admin&retryWrites=true&w=majority&appName=neoG"
+    }
+  }
+  
